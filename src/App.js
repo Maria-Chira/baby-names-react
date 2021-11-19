@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import babyNames from './babyNamesData.json'
+import DisplayName from "./DisplayName";
+
+
 
 function App() {
+    let alphabeticalBabyNames = babyNames.sort((baby1, baby2) =>
+      baby1.name.localeCompare(baby2.name)
+    );
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className="Heading">Baby Name Picker</h1>
+      <div className="App">
+        {alphabeticalBabyNames.map((baby, index) => (
+          <DisplayName key={index} baby={baby} />
+        ))}
+      </div>
     </div>
   );
 }
