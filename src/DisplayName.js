@@ -3,7 +3,7 @@ import React from "react";
 const DisplayName = (props) => {
     
     return (
-      <div>
+      <div >
         {props.baby.sex === "f" ? (
           <p className="GirlName">{props.baby.name}</p>
         ) : (
