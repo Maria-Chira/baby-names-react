@@ -34,3 +34,23 @@
   flex-direction: column;
   align-items: center;
 }
+
+
+/* ----------------------------------Favourites Section --------------------- */
+.FavouritesHeading{
+  color: rgb(119, 115, 115);
+}
+
+.FavouritesContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+
+.FavoritesMainContainer{
+  width: 90%;
+  margin-bottom: 20px;
+}
