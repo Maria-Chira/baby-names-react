@@ -54,3 +54,37 @@
   width: 90%;
   margin-bottom: 20px;
 }
+
+
+/* ------------------------------------Filter by Gender section ----------------------- */
+.GenderIcon{
+  width: 30px;
+  height: 30px;
+}
+
+.FilterNameGender{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:20px;
+}
+
+.gray{
+  background-color: rgb(119, 115, 115);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.pink{
+  background-color: rgba(216, 33, 176, 0.541);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.blue{
+  background-color: rgba(0, 0, 255, 0.63);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
